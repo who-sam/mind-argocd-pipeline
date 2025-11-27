@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: whosam1/notes-app-backend:latest
+        image: whosam1/notes-app-backend:COMMIT_HASH  # Will be replaced by Jenkins
         ports:
         - containerPort: 8080
         env:
