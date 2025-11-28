@@ -72,7 +72,10 @@ spec:
           periodSeconds: 5
           timeoutSeconds: 3
           failureThreshold: 3
+      # volumes:
+      # - name: postgres-storage
+      #   persistentVolumeClaim:
+      #     claimName: postgres-pvc
       volumes:
       - name: postgres-storage
-        persistentVolumeClaim:
-          claimName: postgres-pvc
+          emptyDir: {}
