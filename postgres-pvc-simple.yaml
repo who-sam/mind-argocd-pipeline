@@ -3,12 +3,10 @@ kind: PersistentVolumeClaim
 metadata:
   name: postgres-pvc
   namespace: notes-app
-  labels:
-    app: postgres
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: gp2  # Default EKS storage class
+  storageClassName: ebs-csi-gp3 # Update this line
   resources:
     requests:
       storage: 10Gi
