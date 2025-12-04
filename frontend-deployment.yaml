@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: whosam1/notes-app-frontend:latest
+        image: whosam1/notes-app-frontend:67eebba
         imagePullPolicy: Always
         ports:
         - containerPort: 80
